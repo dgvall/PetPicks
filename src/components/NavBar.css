@@ -1,0 +1,72 @@
+.navBar {
+  display: flex;
+  justify-content: space-around;
+  border: solid red 2px;
+  align-items: center;
+}
+
+.text {
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+  border: solid red 2px;
+  width: 15rem;
+}
+
+.title {
+  font-size: 3rem;
+  display: flex;
+  border: solid red 2px;
+}
+
+.doubleText {
+  display: flex;
+  flex-direction: row;
+}
+
+#play {
+  width: 30rem;
+}
+
+
+
+
+/* .navBar {
+  display: flex;
+  justify-content: space-between;
+  color: red;
+  text-decoration: none;
+}
+
+.text {
+  font-size: 2rem;
+  text-decoration: none;
+  color: white;
+  margin: auto;
+  height: 100%;
+}
+
+.title {
+  font-size: 5rem;
+  z-index: 2;
+  float: none;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#play {
+  padding-left: 20vw;
+  padding-right: 20vw;
+}
+
+#leaderboard {
+  padding-left: 5vw;
+}
+
+#postpet {
+  padding-left: 4vw;
+  padding-right: 5vw;
+} */
