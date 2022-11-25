@@ -1,0 +1,18 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  border: solid yellow 1px;
+}
+
+.image {
+  border: solid yellow 1px;
+  width: 700px;
+  height: 700px;
+}
+
+.name {
+  display: flex;
+  justify-content: center;
+  font-size: 100px;
+  border: solid yellow 1px;
+}
