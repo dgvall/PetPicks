@@ -2,6 +2,7 @@ import React, {useState} from "react"
 import {Switch, Route} from "react-router-dom"
 import NavBar from "./NavBar"
 import Game from "./Game"
+import PostPet from "./PostPet"
 
 
 function App() {
@@ -43,7 +44,7 @@ function App() {
           leaderboard
         </Route>
         <Route exact path = "/postyourpet">
-          postyourpet
+          <PostPet />
         </Route>
       </Switch>
     </div>

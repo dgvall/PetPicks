@@ -1,0 +1,42 @@
+#page-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+#form-container {
+  padding: 210px;
+}
+
+#form {
+  display: flex;
+  border: solid white 2px;
+  flex-direction: column;
+}
+
+input {
+  display: flex;
+  justify-content: center;
+  height: 3em;
+  width: 20em;
+}
+
+select {
+  display: flex;
+  justify-content: center;
+  height: 3em;
+  width: 20em;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+}
+
+#card-div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border: solid white 2px;
+}
