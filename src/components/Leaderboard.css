@@ -1,0 +1,38 @@
+#leaderboard-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#filter-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding-left: 5em;
+  padding-right: 5em;
+}
+
+#filters {
+  display: flex;
+}
+
+button {
+  width: 9em;
+  height: 3.5em;
+}
+
+table {
+  border: solid red 2px;
+  padding-left: 5em;
+  padding-right: 5em;
+}
+
+th {
+  font-size: 5rem;
+  border: solid red 2px;
+}
+
+td {
+  font-size: 3rem;
+  border: solid red 2px;
+}

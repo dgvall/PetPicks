@@ -3,6 +3,7 @@ import {Switch, Route} from "react-router-dom"
 import NavBar from "./NavBar"
 import Game from "./Game"
 import PostPet from "./PostPet"
+import Leaderboard from "./Leaderboard"
 
 
 function App() {
@@ -41,7 +42,7 @@ function App() {
           <Game pets = {staticPets}/>
         </Route>
         <Route exact path = "/leaderboard">
-          leaderboard
+          <Leaderboard />
         </Route>
         <Route exact path = "/postyourpet">
           <PostPet />
