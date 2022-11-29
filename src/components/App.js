@@ -17,12 +17,23 @@ function App() {
     .then(data => setPets(data))
   }, [])
 
-  function handlePetClick() {
+  function onPetClick(id, likes) {
     setStart(() => start + 1)
     setEnd(() => end + 1)
+
+    fetch(`http://localhost:3000/pets/${id}`, {
+      method: "PATCH",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        likes: likes + 1
+      }),
+    })
+      .then(res => res.json())
+      .then(updatedPet => updatedPet)
   }
 
-  
   const displayedPets = pets.slice(start,end)
 
   return (
@@ -32,7 +43,7 @@ function App() {
         <Route exact path = "/">
           <Game
           pets = {displayedPets}
-          onPetClick = {handlePetClick}
+          handlePetClick = {onPetClick}
           />
         </Route>
         <Route exact path = "/leaderboard">
