@@ -3,7 +3,7 @@ import PetCard from "./PetCard"
 import Vs from "./vs.png"
 import "./Game.css"
 
-function Game ({pets}) {
+function Game ({pets, onPetClick}) {
   return (
     <div id = "card-container">
       {/* <img id = "vs" src = {Vs} /> */}
@@ -13,7 +13,10 @@ function Game ({pets}) {
             key = {pet.id}
             name = {pet.name}
             image = {pet.image}
-            type = {pet.type}/>
+            type = {pet.type}
+            id = {pet.id}
+            onPetClick = {onPetClick}
+            />
         }) 
       }
     </div>

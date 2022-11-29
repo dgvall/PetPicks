@@ -8,6 +8,8 @@ import Leaderboard from "./Leaderboard"
 
 function App() {
   const [pets, setPets] = useState([])
+  const [start, setStart] = useState(0)
+  const [end, setEnd] = useState(2)
 
   useEffect(() => {
     fetch("http://localhost:3000/pets")
@@ -15,15 +17,23 @@ function App() {
     .then(data => setPets(data))
   }, [])
 
+  function handlePetClick() {
+    setStart(() => start + 1)
+    setEnd(() => end + 1)
+  }
+
   
-  const displayedPets = pets
+  const displayedPets = pets.slice(start,end)
 
   return (
     <div>
       <NavBar />
       <Switch>
         <Route exact path = "/">
-          <Game pets = {displayedPets}/>
+          <Game
+          pets = {displayedPets}
+          onPetClick = {handlePetClick}
+          />
         </Route>
         <Route exact path = "/leaderboard">
           <Leaderboard />
