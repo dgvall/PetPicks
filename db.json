@@ -1,0 +1,46 @@
+{
+  "pets": [
+      {
+        "id": 1,
+        "name": "Jared",
+        "image": "https://i.natgeofe.com/n/4f5aaece-3300-41a4-b2a8-ed2708a0a27c/domestic-dog_thumb_square.jpg",
+        "type": "Dog",
+        "likes": 3
+      },
+      {
+        "id": 2,
+        "name": "Max",
+        "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/golden-retriever-royalty-free-image-506756303-1560962726.jpg?crop=0.672xw:1.00xh;0.166xw,0&resize=640:*",
+        "type": "Dog",
+        "likes": 5
+      },
+      {
+        "id": 3,
+        "name": "Kit",
+        "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/cute-cat-photos-1593441022.jpg?crop=0.670xw:1.00xh;0.167xw,0&resize=640:*",
+        "type": "Cat",
+        "likes": 6
+      },
+      {
+        "id": 4,
+        "name": "Benny",
+        "image": "http://yourdost-blog-images.s3-ap-southeast-1.amazonaws.com/wp-content/uploads/2016/01/03165939/Dogs.jpg",
+        "type": "Dog",
+        "likes": 10
+      },
+      {
+        "id": 5,
+        "name": "Gerald",
+        "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/why-cats-are-best-pets-1559241235.jpg?crop=0.586xw:0.880xh;0.0684xw,0.0611xh&resize=640:*",
+        "type": "Cat",
+        "likes": 2
+      },
+      {
+        "id": 6,
+        "name": "Lenny",
+        "image": "https://news.cgtn.com/news/77416a4e3145544d326b544d354d444d3355444f31457a6333566d54/img/37d598e5a04344da81c76621ba273915/37d598e5a04344da81c76621ba273915.jpg",
+        "type": "Cat",
+        "likes": 2
+      }
+  ]
+}
