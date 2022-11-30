@@ -6,10 +6,32 @@ function PostPet () {
   const [name, setName] = useState("")
   const [image, setImage] = useState("")
   const [type, setType] = useState("")
+
+  function handleSubmit(e) {
+    e.preventDefault()
+
+    const formData = {
+      name: name,
+      image: image,
+      type: type,
+      likes: 0
+    }
+
+    fetch("http://localhost:3000/pets", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData)
+    })
+  }
+
   return (
     <div id = "page-container">
       <div id = "form-container">
-        <form id = "form">
+        <form id = "form"
+        onSubmit = {handleSubmit}
+        >
           <h1>Pet Name</h1>
           <input
           onChange = {(e) => setName(e.target.value)}
@@ -48,9 +70,9 @@ function PostPet () {
       <div id = "card-div">
         <h1>PREVIEW</h1>
         <PetCard
-        image = {"https://i.natgeofe.com/n/4f5aaece-3300-41a4-b2a8-ed2708a0a27c/domestic-dog_thumb_square.jpg"}
-        name = {"Max"}
-        type = {"Dog"}
+        image = {image}
+        name = {name}
+        // type = {type}
         />
       </div>
     </div>
