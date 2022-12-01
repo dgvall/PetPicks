@@ -17,7 +17,8 @@ function Leaderboard({pets}) {
       setFilterType("")
     } else setFilterType(e.target.value)
   }
-  
+
+  console.log(leaderboardPets)
   return (
     <div id = "leaderboard-container">
       <div id = "filter-container">
@@ -67,12 +68,12 @@ function Leaderboard({pets}) {
         </thead>
         <tbody>
         {
-          leaderboardPets.map((pet) => {
+          leaderboardPets.map((pet, index) => {
             return (
               <tr
               key = {pet.id}
               >
-                <td>place</td>
+                <td>{index + 1}</td>
                 <td>
                   <img className = "lbImage" src = {pet.image}/>
                 </td>

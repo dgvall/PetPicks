@@ -39,12 +39,14 @@ function PostPet () {
           <h1>Pet Name</h1>
           <input
           onChange = {(e) => setName(e.target.value)}
+          placeholder = "Pet Name"
           type = "text"
           value = {name}
           />
           <h1>Pet Image</h1>
           <input
           onChange = {(e) => setImage(e.target.value)}
+          placeholder = "Pet Image URL"
           type = "text"
           value = {image}
           />
