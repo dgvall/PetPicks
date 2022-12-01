@@ -1,19 +1,40 @@
-import React from "react"
+import React, {useState} from "react"
 import "./Leaderboard.css"
 
-function Leaderboard() {
+function Leaderboard({pets}) {
+  const [filterType, setFilterType] = useState("")
+  const [filterName, setFilterName] = useState("")
+
+  const leaderboardPets = pets
+  .sort((a, b) => {
+    return b.likes - a.likes
+  })
+  .filter((pet) => pet.type.includes(filterType))
+  .filter((pet) => pet.name.toLowerCase().includes(filterName.toLowerCase()))
+
+  function handleType(e) {
+    if(e.target.value === "All") {
+      setFilterType("")
+    } else setFilterType(e.target.value)
+  }
+  
   return (
     <div id = "leaderboard-container">
       <div id = "filter-container">
         <div id = "filters">
           <input
-          value = "Search"
+          value = {filterName}
+          onChange = {(e) => setFilterName(e.target.value)}
           type = "text"
           />
 
           <select
           placeholder = "Filter By Animal"
+          onChange = {handleType}
           >
+          <option>
+            All
+          </option>
           <option>
             Cat
           </option>
@@ -36,24 +57,32 @@ function Leaderboard() {
       </div>
       </div>
       <table>
+        <thead>
         <tr>
           <th>Place</th>
           <th>Picture</th>
           <th>Name</th>
           <th>Likes</th>
         </tr>
-        <tr>
-          <td>1st Place</td>
-          <td>DogPicHere</td>
-          <td>Rufus</td>
-          <td>200 Likes</td>
-        </tr>
-        <tr>
-          <td>2nd Place</td>
-          <td>DogPicHere</td>
-          <td>Kyle</td>
-          <td>150 Likes</td>
-        </tr>
+        </thead>
+        <tbody>
+        {
+          leaderboardPets.map((pet) => {
+            return (
+              <tr
+              key = {pet.id}
+              >
+                <td>place</td>
+                <td>
+                  <img className = "lbImage" src = {pet.image}/>
+                </td>
+                <td>{pet.name}</td>
+                <td>{pet.likes}</td>
+              </tr>
+            )
+          })
+        }
+        </tbody>
       </table>
     </div>
   )

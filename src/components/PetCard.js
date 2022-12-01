@@ -16,7 +16,6 @@ function PetCard({name, image, type, handlePetClick, id, likes}) {
       <img className = "image"
       src = {image}
       onError = {(e) => {
-        console.log(e.target)
         e.target.onerror = null;
         e.target.src = "https://cdni.iconscout.com/illustration/premium/thumb/404-page-not-found-5718896-4777467.png"
       }}

@@ -47,7 +47,9 @@ function App() {
           />
         </Route>
         <Route exact path = "/leaderboard">
-          <Leaderboard />
+          <Leaderboard
+          pets = {pets}
+          />
         </Route>
         <Route exact path = "/postyourpet">
           <PostPet />

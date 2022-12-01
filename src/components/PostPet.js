@@ -26,6 +26,10 @@ function PostPet () {
     })
   }
 
+  function handleType(e) {
+    setType(e.target.value)
+  }
+
   return (
     <div id = "page-container">
       <div id = "form-container">
@@ -45,7 +49,14 @@ function PostPet () {
           value = {image}
           />
           <h1>Pet Type</h1>
-          <select>
+          <select
+            onChange = {handleType}
+          >
+            <option
+            value = ""
+            disabled selected
+            > Select Pet Type
+            </option>
             <option
             value = "Cat"
             > Cat
