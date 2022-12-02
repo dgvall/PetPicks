@@ -17,6 +17,8 @@
 input {
   display: flex;
   justify-content: center;
+  text-align: center;
+  /* font-size: 2rem; */
   height: 3em;
   width: 20em;
 }
@@ -26,6 +28,7 @@ select {
   justify-content: center;
   height: 3.4em;
   width: 20.6em;
+  text-align: center;
 }
 
 h1 {

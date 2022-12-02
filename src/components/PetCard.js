@@ -3,7 +3,6 @@ import "./PetCard.css"
 
 function PetCard({name, image, type, handlePetClick, id, likes}) {
   const [updatedLikes, setUpdatedLikes] = useState(likes)
-
   
   return (
     <div className = "card"
@@ -13,7 +12,7 @@ function PetCard({name, image, type, handlePetClick, id, likes}) {
     }
     }
     >
-      <img className = "image"
+      <img id = "petImage"
       src = {image}
       onError = {(e) => {
         e.target.onerror = null;
