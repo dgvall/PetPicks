@@ -8,9 +8,11 @@ function PostPet () {
   const [type, setType] = useState("")
   const [isEnabled, setIsEnabled] = useState(true)
 
-  const [errorName, setErrorName] = useState(true)
-  const [errorImage, setErrorImage] = useState(true)
-  const [errorType, setErrorType] = useState(true)
+  const [error, setError] = useState(false)
+
+  // const [errorName, setErrorName] = useState(true)
+  // const [errorImage, setErrorImage] = useState(true)
+  // const [errorType, setErrorType] = useState(true)
 
   // function validate() {
   //   if(name.length === 0) {
@@ -41,6 +43,7 @@ function PostPet () {
       && !(document.getElementById("petImage").src === "https://cdni.iconscout.com/illustration/premium/thumb/404-page-not-found-5718896-4777467.png")
       && !(type === "")
     ) {
+      setError(false)
       console.log("passed")
       const formData = {
         name: name,
@@ -48,7 +51,6 @@ function PostPet () {
         type: type,
         likes: 0
       }
-
       fetch("http://localhost:3000/pets", {
         method: "POST",
         headers: {
@@ -59,13 +61,19 @@ function PostPet () {
     } else {
       console.log("failed, try again")
       setIsEnabled(false)
+      setError(true)
+      alert("Please fill in all of your pet information!")
     }
   }
 
   return (
     <div id = "page-container">
       <div id = "form-container">
-        <form id = "form"
+        <form id = {
+          error
+          ? "form-error"
+          : "form"
+        }
         onSubmit = {handleSubmit}
         >
           <h1>Pet Name</h1>
