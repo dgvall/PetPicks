@@ -35,6 +35,7 @@ th {
 td {
   font-size: 3rem;
   border: solid red 2px;
+  text-align: center;
 }
 
 .lbImage {
