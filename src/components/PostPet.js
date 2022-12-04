@@ -81,6 +81,7 @@ function PostPet () {
           onChange = {(e) => {
             setName(e.target.value)
             setIsEnabled(true)
+            e.target.parentNode.id = "form"
           }}
           placeholder = "Pet Name"
           type = "text"
@@ -91,6 +92,7 @@ function PostPet () {
           onChange = {(e) => {
             setImage(e.target.value)
             setIsEnabled(true)
+            e.target.parentNode.id = "form"
           }}
           placeholder = "Pet Image URL"
           type = "text"
@@ -101,6 +103,7 @@ function PostPet () {
             onChange = {(e) => {
               setType(e.target.value)
               setIsEnabled(true)
+              e.target.parentNode.id = "form"
             }}
           >
             <option
@@ -126,7 +129,7 @@ function PostPet () {
             > Other
             </option>
           </select>
-          <button disabled = {!isEnabled}>Submit</button>
+          <button id = "formSubmit" disabled = {!isEnabled}>Submit</button>
         </form>
       </div>
       <div id = "card-div">
