@@ -21,6 +21,7 @@
   justify-content: center;
   border: solid red 2px;
   flex-direction: column;
+  padding-bottom: 100px;
 }
 
 input {
@@ -53,9 +54,9 @@ h1 {
   border: solid white 2px;
 }
 
-#formSubmit {
+/* #formSubmit {
   display: flex;
   justify-content: center;
   text-align: center;
   padding-top: 20px;
-}
+} */

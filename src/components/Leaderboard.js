@@ -18,7 +18,6 @@ function Leaderboard({pets}) {
     } else setFilterType(e.target.value)
   }
 
-  console.log(leaderboardPets)
   return (
     <div id = "leaderboard-container">
       <div id = "filter-container">

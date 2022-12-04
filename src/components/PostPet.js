@@ -1,40 +1,16 @@
 import React, {useState} from "react"
+import {useHistory} from "react-router-dom"
 import PetCard from "./PetCard"
 import "./PostPet.css"
 
-function PostPet () {
+function PostPet() {
   const [name, setName] = useState("")
   const [image, setImage] = useState("")
   const [type, setType] = useState("")
   const [isEnabled, setIsEnabled] = useState(true)
-
   const [error, setError] = useState(false)
 
-  // const [errorName, setErrorName] = useState(true)
-  // const [errorImage, setErrorImage] = useState(true)
-  // const [errorType, setErrorType] = useState(true)
-
-  // function validate() {
-  //   if(name.length === 0) {
-  //     setErrorName(true)
-  //     console.log("name didn't pass")
-  //   } else setErrorName(false)
-
-  //   if (document.getElementById("petImage").src === "https://cdni.iconscout.com/illustration/premium/thumb/404-page-not-found-5718896-4777467.png") {
-  //     setErrorImage(true)
-  //     console.log("image didn't pass")
-  //   } else setErrorImage(false)
-
-  //   if(type === "") {
-  //     setErrorType(true)
-  //     console.log("type didn't pass")
-  //   } else setErrorType(false)
-
-  //   if (!errorName && !errorImage && !errorType) {
-  //     console.log("returned true")
-  //     return true
-  //   } 
-  // }
+  const history = useHistory()
 
   function handleSubmit(e) {
     e.preventDefault()
@@ -58,6 +34,7 @@ function PostPet () {
         },
         body: JSON.stringify(formData)
     })
+      history.push(`/submitted`)
     } else {
       console.log("failed, try again")
       setIsEnabled(false)

@@ -1,0 +1,15 @@
+#submitted-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border: solid red 2px;
+}
+
+#submitted-img {
+  width: 1000px;
+  height: 700px;
+  object-fit: cover;
+  border: solid yellow 1px;
+  align-self: center;
+}
+
