@@ -5,7 +5,9 @@ import "./Game.css"
 
 function Game ({pets, handlePetClick}) {
   return (
-    <div id = "card-container">
+    <div>
+      <h1 id = "gameHeader">Pick a Pet!</h1>
+      <div id = "card-container">
       {/* <img id = "vs" src = {Vs} /> */}
       {
         pets.map(pet => {
@@ -20,6 +22,8 @@ function Game ({pets, handlePetClick}) {
             />
         }) 
       }
+    </div>
+
     </div>
   )
 }

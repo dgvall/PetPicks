@@ -53,7 +53,7 @@ function App() {
     <div>
       <NavBar />
       <Switch>
-        <Route exact path = "/">
+        <Route exact path = "/play">
           <Game
           pets = {displayedPets}
           handlePetClick = {onPetClick}

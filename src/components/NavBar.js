@@ -6,7 +6,7 @@ function NavBar() {
   return (
     <div className = "navBar">
         <div>
-          <NavLink id = "play" className = "text" exact to = "/">PLAY</NavLink>
+          <NavLink id = "play" className = "text" exact to = "/play">PLAY</NavLink>
         </div>
         <h1 className = "title">PetPicks</h1>
          <div className = "doubleText">

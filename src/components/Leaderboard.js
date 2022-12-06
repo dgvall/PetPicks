@@ -33,6 +33,7 @@ function Leaderboard({pets}) {
 
   return (
     <div id = "leaderboard-container">
+      <h1 id = "lbHeader">Leaderboard</h1>
       <div id = "filter-container">
         <div id = "filters">
           <input
@@ -64,11 +65,11 @@ function Leaderboard({pets}) {
           </select>
         </div>
 
-      <div>
+      {/* <div>
         <button>Day</button>
         <button>Week</button>
         <button>All Time</button>
-      </div>
+      </div> */}
       </div>
       <table>
         <thead>

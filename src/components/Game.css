@@ -11,3 +11,7 @@
   z-index: 10;
   height: 100px;
 }
+
+#gameHeader {
+  font-size: 4rem;
+}

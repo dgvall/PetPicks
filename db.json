@@ -5,83 +5,83 @@
       "name": "Jared",
       "image": "https://i.natgeofe.com/n/4f5aaece-3300-41a4-b2a8-ed2708a0a27c/domestic-dog_thumb_square.jpg",
       "type": "Dog",
-      "likes": 19
+      "likes": 24
     },
     {
       "id": 2,
       "name": "Max",
       "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/golden-retriever-royalty-free-image-506756303-1560962726.jpg?crop=0.672xw:1.00xh;0.166xw,0&resize=640:*",
       "type": "Dog",
-      "likes": 29
+      "likes": 30
     },
     {
       "id": 3,
       "name": "Kit",
       "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/cute-cat-photos-1593441022.jpg?crop=0.670xw:1.00xh;0.167xw,0&resize=640:*",
       "type": "Cat",
-      "likes": 16
+      "likes": 17
     },
     {
       "id": 4,
       "name": "Benny",
       "image": "http://yourdost-blog-images.s3-ap-southeast-1.amazonaws.com/wp-content/uploads/2016/01/03165939/Dogs.jpg",
       "type": "Dog",
-      "likes": 31
+      "likes": 34
     },
     {
       "id": 5,
       "name": "Gerald",
       "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/why-cats-are-best-pets-1559241235.jpg?crop=0.586xw:0.880xh;0.0684xw,0.0611xh&resize=640:*",
       "type": "Cat",
-      "likes": 18
+      "likes": 20
     },
     {
       "id": 6,
       "name": "Lenny",
       "image": "https://news.cgtn.com/news/77416a4e3145544d326b544d354d444d3355444f31457a6333566d54/img/37d598e5a04344da81c76621ba273915/37d598e5a04344da81c76621ba273915.jpg",
       "type": "Cat",
-      "likes": 23
+      "likes": 28
     },
     {
       "name": "Paul",
       "image": "https://www.thesprucepets.com/thmb/Zn1THS8lCbBrU47ChM9wHDdzFpQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-597187685-58ad8e7a3df78c345b864b4f.jpg",
       "type": "Bird",
-      "likes": 5,
+      "likes": 6,
       "id": 7
     },
     {
       "name": "Jeff",
       "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/best-pet-birds-parakeet-1572839068.jpg?crop=0.854xw:0.602xh;0.0391xw,0.139xh&resize=480:*",
       "type": "Bird",
-      "likes": 7,
+      "likes": 9,
       "id": 8
     },
     {
       "name": "Tim & Tom",
       "image": "https://lafeber.com/pet-birds/wp-content/uploads/2020/02/conures-px-4484917.jpg",
       "type": "Bird",
-      "likes": 9,
+      "likes": 11,
       "id": 9
     },
     {
       "name": "Thomas",
       "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/portrait-of-cat-sitting-on-sofa-at-home-royalty-free-image-1574708553.jpg?crop=0.668xw:1.00xh;0.167xw,0&resize=640:*",
       "type": "Cat",
-      "likes": 9,
+      "likes": 12,
       "id": 10
     },
     {
       "name": "Gus",
       "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/best-pet-birds-parrotlet-1572839067.jpg",
       "type": "Bird",
-      "likes": 3,
+      "likes": 5,
       "id": 11
     },
     {
       "name": "Simon",
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Ratte-Vache.jpeg/1200px-Ratte-Vache.jpeg",
       "type": "Other",
-      "likes": 1,
+      "likes": 3,
       "id": 12
     }
   ]

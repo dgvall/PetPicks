@@ -16,10 +16,10 @@
   display: flex;
 }
 
-button {
+/* button {
   width: 9em;
   height: 3.5em;
-}
+} */
 
 table {
   border: solid red 2px;
@@ -28,7 +28,7 @@ table {
 }
 
 th {
-  font-size: 5rem;
+  font-size: 3rem;
   border: solid red 2px;
 }
 
@@ -47,4 +47,8 @@ td {
 
 #place {
   font-size: 8rem;
+}
+
+#lbHeader {
+  font-size: 5rem;
 }

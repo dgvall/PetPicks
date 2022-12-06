@@ -46,6 +46,7 @@ function PostPet() {
   return (
     <div id = "page-container">
       <div id = "form-container">
+        <h1 id = "postHeader">Your Pet Info</h1>
         <form id = {
           error
           ? "form-error"
@@ -53,7 +54,7 @@ function PostPet() {
         }
         onSubmit = {handleSubmit}
         >
-          <h1>Pet Name</h1>
+          <h1>Name</h1>
           <input
           onChange = {(e) => {
             setName(e.target.value)
@@ -64,7 +65,7 @@ function PostPet() {
           type = "text"
           value = {name}
           />
-          <h1>Pet Image</h1>
+          <h1>Image</h1>
           <input
           onChange = {(e) => {
             setImage(e.target.value)
@@ -75,7 +76,7 @@ function PostPet() {
           type = "text"
           value = {image}
           />
-          <h1>Pet Type</h1>
+          <h1>Type</h1>
           <select
             onChange = {(e) => {
               setType(e.target.value)

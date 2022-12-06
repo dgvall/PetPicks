@@ -1,3 +1,14 @@
+* {
+  background-color: #171A1F;
+  color: #FBFBFB;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border: solid yellow 1px;
+}
+
 .navBar {
   display: flex;
   justify-content: space-around;
