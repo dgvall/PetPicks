@@ -18,6 +18,19 @@ function Leaderboard({pets}) {
     } else setFilterType(e.target.value)
   }
 
+  function handlePlace(index) {
+    let place = index + 1
+      if (place === 1) {
+        return "🥇"
+      } 
+      if (place === 2) {
+        return "🥈"
+      }
+      if (place === 3) {
+        return "🥉"
+      } else return place
+  }
+
   return (
     <div id = "leaderboard-container">
       <div id = "filter-container">
@@ -26,6 +39,7 @@ function Leaderboard({pets}) {
           value = {filterName}
           onChange = {(e) => setFilterName(e.target.value)}
           type = "text"
+          placeholder = "Pet Name Search"
           />
 
           <select
@@ -72,12 +86,16 @@ function Leaderboard({pets}) {
               <tr
               key = {pet.id}
               >
-                <td>{index + 1}</td>
+                <td>
+                  <p id = "place" >
+                    {handlePlace(index)}
+                  </p>
+                </td>
                 <td>
                   <img className = "lbImage" src = {pet.image}/>
                 </td>
                 <td>{pet.name}</td>
-                <td>{pet.likes}</td>
+                <td>{`${pet.likes} ❤`}</td>
               </tr>
             )
           })

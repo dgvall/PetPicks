@@ -5,7 +5,7 @@
       "name": "Jared",
       "image": "https://i.natgeofe.com/n/4f5aaece-3300-41a4-b2a8-ed2708a0a27c/domestic-dog_thumb_square.jpg",
       "type": "Dog",
-      "likes": 17
+      "likes": 19
     },
     {
       "id": 2,
@@ -33,55 +33,55 @@
       "name": "Gerald",
       "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/why-cats-are-best-pets-1559241235.jpg?crop=0.586xw:0.880xh;0.0684xw,0.0611xh&resize=640:*",
       "type": "Cat",
-      "likes": 17
+      "likes": 18
     },
     {
       "id": 6,
       "name": "Lenny",
       "image": "https://news.cgtn.com/news/77416a4e3145544d326b544d354d444d3355444f31457a6333566d54/img/37d598e5a04344da81c76621ba273915/37d598e5a04344da81c76621ba273915.jpg",
       "type": "Cat",
-      "likes": 21
+      "likes": 23
     },
     {
       "name": "Paul",
       "image": "https://www.thesprucepets.com/thmb/Zn1THS8lCbBrU47ChM9wHDdzFpQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-597187685-58ad8e7a3df78c345b864b4f.jpg",
       "type": "Bird",
-      "likes": 4,
+      "likes": 5,
       "id": 7
     },
     {
       "name": "Jeff",
       "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/best-pet-birds-parakeet-1572839068.jpg?crop=0.854xw:0.602xh;0.0391xw,0.139xh&resize=480:*",
       "type": "Bird",
-      "likes": 6,
+      "likes": 7,
       "id": 8
     },
     {
       "name": "Tim & Tom",
       "image": "https://lafeber.com/pet-birds/wp-content/uploads/2020/02/conures-px-4484917.jpg",
       "type": "Bird",
-      "likes": 8,
+      "likes": 9,
       "id": 9
     },
     {
       "name": "Thomas",
       "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/portrait-of-cat-sitting-on-sofa-at-home-royalty-free-image-1574708553.jpg?crop=0.668xw:1.00xh;0.167xw,0&resize=640:*",
       "type": "Cat",
-      "likes": 8,
+      "likes": 9,
       "id": 10
     },
     {
       "name": "Gus",
       "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/best-pet-birds-parrotlet-1572839067.jpg",
       "type": "Bird",
-      "likes": 2,
+      "likes": 3,
       "id": 11
     },
     {
       "name": "Simon",
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Ratte-Vache.jpeg/1200px-Ratte-Vache.jpeg",
       "type": "Other",
-      "likes": 0,
+      "likes": 1,
       "id": 12
     }
   ]
