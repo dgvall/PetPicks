@@ -16,3 +16,7 @@
   text-overflow: ellipsis; */
   text-size-adjust:auto;
 }
+
+.card {
+  cursor: pointer;
+}

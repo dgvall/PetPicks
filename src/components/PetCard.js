@@ -8,7 +8,9 @@ function PetCard({name, image, type, handlePetClick, id, likes}) {
     <div className = "card"
     onClick = {() => {
       setUpdatedLikes(() => likes + 1)
-      handlePetClick(id, updatedLikes)
+      if (handlePetClick) {
+        handlePetClick(id, updatedLikes)
+      }
     }
     }
     >

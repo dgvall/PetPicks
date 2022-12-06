@@ -1,6 +1,7 @@
 * {
   background-color: #171A1F;
   color: #FBFBFB;
+  font-family: sans-serif;
 }
 
 .card {
@@ -30,6 +31,7 @@
   font-size: 3rem;
   display: flex;
   border: solid red 2px;
+  cursor:pointer;
 }
 
 .doubleText {

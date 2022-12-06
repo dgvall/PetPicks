@@ -23,7 +23,6 @@ function Game ({pets, handlePetClick}) {
         }) 
       }
     </div>
-
     </div>
   )
 }

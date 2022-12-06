@@ -37,6 +37,7 @@ input {
   /* font-size: 2rem; */
   width: 30em;
   height: 3em;
+  cursor: pointer;
 }
 
 select {
@@ -45,6 +46,7 @@ select {
   height: 3.4em;
   width: 30.6em;
   text-align: center;
+  cursor: pointer;
 }
 
 h1 {
@@ -67,6 +69,7 @@ h1 {
 
 #formSubmit {
   height: 4em;
+  cursor: pointer;
   /* display: flex; */
   /* justify-content: center; */
   /* width: 15em;
