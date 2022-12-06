@@ -28,7 +28,7 @@
 }
 
 .title {
-  font-size: 3rem;
+  font-size: 4rem;
   display: flex;
   border: solid red 2px;
   cursor:pointer;

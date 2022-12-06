@@ -50,5 +50,24 @@ td {
 }
 
 #lbHeader {
-  font-size: 5rem;
+  font-size: 3rem;
+}
+
+input {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  /* font-size: 2rem; */
+  width: 30em;
+  height: 3em;
+  cursor: pointer;
+}
+
+select {
+  display: flex;
+  justify-content: center;
+  height: 3.4em;
+  width: 30.6em;
+  text-align: center;
+  cursor: pointer;
 }
