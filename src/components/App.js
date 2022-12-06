@@ -5,6 +5,7 @@ import Game from "./Game"
 import PostPet from "./PostPet"
 import Leaderboard from "./Leaderboard"
 import PetSubmitted from "./PetSubmitted"
+import PetRules from "./PetRules"
 
 function App() {
   const [shuffledPets, setShuffledPets] = useState([])
@@ -53,6 +54,9 @@ function App() {
     <div>
       <NavBar />
       <Switch>
+        <Route exact path = "/">
+          <PetRules />
+        </Route>
         <Route exact path = "/play">
           <Game
           pets = {displayedPets}

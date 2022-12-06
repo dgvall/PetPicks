@@ -1,14 +1,15 @@
 import React from "react"
-import {NavLink} from "react-router-dom"
+import {NavLink, useHistory} from "react-router-dom"
 import "./NavBar.css"
 
 function NavBar() {
+  const history = useHistory()
   return (
     <div className = "navBar">
         <div>
           <NavLink id = "play" className = "text" exact to = "/play">PLAY</NavLink>
         </div>
-        <h1 className = "title">PetPicks</h1>
+        <h1 onClick = {() => history.push("/")} className = "title">PetPicks</h1>
          <div className = "doubleText">
           <NavLink id = "leaderboard" className = "text" to = "/leaderboard">LEADERBOARD</NavLink>
           <NavLink id = "postpet" className = "text" to = "/postyourpet">POST YOUR PET</NavLink>
