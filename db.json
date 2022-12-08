@@ -5,7 +5,7 @@
       "name": "Jared",
       "image": "https://i.natgeofe.com/n/4f5aaece-3300-41a4-b2a8-ed2708a0a27c/domestic-dog_thumb_square.jpg",
       "type": "Dog",
-      "likes": 56
+      "likes": 58
     },
     {
       "id": 2,
@@ -19,7 +19,7 @@
       "name": "Kit",
       "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/cute-cat-photos-1593441022.jpg?crop=0.670xw:1.00xh;0.167xw,0&resize=640:*",
       "type": "Cat",
-      "likes": 55
+      "likes": 56
     },
     {
       "id": 4,
@@ -33,14 +33,14 @@
       "name": "Gerald",
       "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/why-cats-are-best-pets-1559241235.jpg?crop=0.586xw:0.880xh;0.0684xw,0.0611xh&resize=640:*",
       "type": "Cat",
-      "likes": 44
+      "likes": 45
     },
     {
       "id": 6,
       "name": "Lenny",
       "image": "https://news.cgtn.com/news/77416a4e3145544d326b544d354d444d3355444f31457a6333566d54/img/37d598e5a04344da81c76621ba273915/37d598e5a04344da81c76621ba273915.jpg",
       "type": "Cat",
-      "likes": 56
+      "likes": 57
     },
     {
       "name": "Paul",
@@ -67,14 +67,14 @@
       "name": "Thomas",
       "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/portrait-of-cat-sitting-on-sofa-at-home-royalty-free-image-1574708553.jpg?crop=0.668xw:1.00xh;0.167xw,0&resize=640:*",
       "type": "Cat",
-      "likes": 46,
+      "likes": 47,
       "id": 10
     },
     {
       "name": "Gus",
       "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/best-pet-birds-parrotlet-1572839067.jpg",
       "type": "Bird",
-      "likes": 24,
+      "likes": 25,
       "id": 11
     },
     {
@@ -95,7 +95,7 @@
       "name": "Bonny",
       "image": "https://www.animalhumanesociety.org/sites/default/files/styles/scale_width_960/public/media/image/2019-03/Nibbles.jpg?itok=N4OjWn-p",
       "type": "Rabbit",
-      "likes": 23,
+      "likes": 24,
       "id": 14
     },
     {
