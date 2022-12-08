@@ -73,12 +73,6 @@ function Leaderboard({pets}) {
           </option>
           </select>
         </div>
-
-      {/* <div>
-        <button>Day</button>
-        <button>Week</button>
-        <button>All Time</button>
-      </div> */}
       </div>
       <table>
         <thead>

@@ -122,7 +122,6 @@ function PostPet({handleUpdatePets}) {
         <PetCard
         image = {image}
         name = {name}
-        // type = {type}
         />
       </div>
     </div>

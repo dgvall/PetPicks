@@ -3,11 +3,6 @@ import PetCard from "./PetCard"
 import "./Game.css"
 
 function Game ({pets, handlePetClick}) {
-  // function checkForTwoPets() {
-  //   if (pets[1] === undefined) {
-  //     console.log("hello")
-  //   } 
-  // }
   return (
     <div>
       <h1 id = "gameHeader">Pick a Pet!</h1>

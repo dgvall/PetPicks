@@ -62,17 +62,10 @@ function App() {
   }
   const displayedPets = shuffledPets.slice(start,end)
 
-  // if(displayedPets[1] === undefined) {
-  //   setShuffledPets(shuffle(shuffledPets))
-  // }
-
   return (
     <div>
       <NavBar />
       <Switch>
-        <Route exact path = "/">
-          <PetRules />
-        </Route>
         <Route exact path = "/play">
           <Game
           pets = {displayedPets}
@@ -91,6 +84,9 @@ function App() {
         </Route>
         <Route exact path = "/submitted">
           <PetSubmitted />
+        </Route>
+        <Route path = "/">
+          <PetRules />
         </Route>
       </Switch>
     </div>

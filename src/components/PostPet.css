@@ -65,9 +65,4 @@ h1 {
   cursor: pointer;
   color: black;
   transform: translate(100px, 50px)
-  /* display: flex; */
-  /* justify-content: center; */
-  /* width: 15em;
-  /* text-align: center; */
-  /* padding-top: 20px; */
 }

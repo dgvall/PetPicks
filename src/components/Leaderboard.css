@@ -16,11 +16,6 @@
   display: flex;
 }
 
-/* button {
-  width: 9em;
-  height: 3.5em;
-} */
-
 table {
   margin-left: 20em;
   margin-right: 20em;
@@ -35,7 +30,6 @@ th {
 
 td {
   font-size: 5rem;
-  /* border: solid red 3px; */
   background-color: #E6D8B9;
   text-align: center;
   margin: 0;
@@ -64,7 +58,6 @@ input {
   display: flex;
   justify-content: center;
   text-align: center;
-  /* font-size: 2rem; */
   width: 30em;
   height: 3em;
   cursor: pointer;
