@@ -8,7 +8,7 @@
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-  padding-left: 5em;
+  padding-left: 20.2em;
   padding-right: 5em;
 }
 
@@ -22,34 +22,41 @@
 } */
 
 table {
-  border: solid red 2px;
-  padding-left: 5em;
-  padding-right: 5em;
+  margin-left: 20em;
+  margin-right: 20em;
+  background-color: rgba(0,0,0,0.2);
 }
 
 th {
   font-size: 3rem;
-  border: solid red 2px;
+  border: solid rgb(129, 216, 242) 5px;
+  background-color: white;
 }
 
 td {
   font-size: 5rem;
-  border: solid red 2px;
+  /* border: solid red 3px; */
+  background-color: #E6D8B9;
   text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
 .lbImage {
-  border: solid yellow 1px;
   width: 400px;
   height: 400px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
   object-fit: cover;
 }
 
 #place {
   font-size: 8rem;
+  background-color: #E6D8B9;
 }
 
 #lbHeader {
+  color: rgb(90, 103, 174);
   font-size: 3rem;
 }
 

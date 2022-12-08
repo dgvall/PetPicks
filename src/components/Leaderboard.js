@@ -60,6 +60,15 @@ function Leaderboard({pets}) {
             Bird
           </option>
           <option>
+            Fish
+          </option>
+          <option>
+            Reptile
+          </option>
+          <option>
+            Rabbit
+          </option>
+          <option>
             Other
           </option>
           </select>

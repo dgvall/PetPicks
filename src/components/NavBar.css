@@ -1,20 +1,21 @@
 * {
-  background-color: #171A1F;
-  color: #FBFBFB;
+  background-color: #e7f3ff;
+  color: #414b5a;
   font-family: sans-serif;
 }
 
-.card {
+/* .card {
   display: flex;
   flex-direction: column;
-  border: solid yellow 1px;
-}
+} */
 
 .navBar {
   display: flex;
   justify-content: space-around;
-  border: solid red 2px;
+  border: solid rgb(255, 255, 255) 10px;
+  padding: 10px;
   align-items: center;
+  background-color: rgb(129, 216, 242);
 }
 
 .text {
@@ -23,22 +24,29 @@
   justify-content: center;
   text-decoration: none;
   color: white;
-  border: solid red 2px;
   width: 15rem;
+  background-color: rgb(129, 216, 242);
 }
 
 .title {
   font-size: 4rem;
   display: flex;
-  border: solid red 2px;
+  /* border: solid rgb(255, 255, 255) 4px; */
   cursor:pointer;
+  background-color: #efcceb;
+  color: rgb(255, 255, 255);
+  border-radius: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .doubleText {
   display: flex;
   flex-direction: row;
+  background-color: rgb(129, 216, 242);
 }
 
 #play {
+  background-color: rgb(129, 216, 242);
   width: 30rem;
 }

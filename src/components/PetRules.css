@@ -5,11 +5,13 @@
 }
 
 #howHeader {
+  color: rgb(90, 103, 174);
   font-size: 5rem;
 }
 
 #howImg {
   width: 400px;
+  background-color: transparent;
 }
 
 ul {
@@ -17,4 +19,8 @@ ul {
   flex-wrap: wrap;
   flex-direction: column;
   font-size: 3rem;
+}
+
+li {
+  color: #414b5a;
 }

@@ -8,30 +8,20 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* padding: 210px; */
   padding-left: 143px;
   padding-right: 143px;
-  border: solid 2px red;
 }
 
 #form {
   display: flex;
   justify-content: center;
-  border: solid white 2px;
-  flex-direction: column;
-  padding-bottom: 100px;
-}
-
-#form-error {
-  display: flex;
-  justify-content: center;
-  border: solid red 2px;
   flex-direction: column;
   padding-bottom: 100px;
 }
 
 input {
   display: flex;
+  color: black;
   justify-content: center;
   text-align: center;
   /* font-size: 2rem; */
@@ -43,6 +33,7 @@ input {
 select {
   display: flex;
   justify-content: center;
+  color: black;
   height: 3.4em;
   width: 30.6em;
   text-align: center;
@@ -51,6 +42,7 @@ select {
 
 h1 {
   display: flex;
+  color: #414b5a;
   justify-content: center;
   font-size: 3rem;
 }
@@ -59,17 +51,20 @@ h1 {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  border: solid white 2px;
 }
 
 #postHeader {
+  color: rgb(90, 103, 174);
   display: flex;
   font-size: 4rem;
 }
 
 #formSubmit {
+  width: 200px;
   height: 4em;
   cursor: pointer;
+  color: black;
+  transform: translate(100px, 50px)
   /* display: flex; */
   /* justify-content: center; */
   /* width: 15em;

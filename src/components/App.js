@@ -11,6 +11,7 @@ function App() {
   const [shuffledPets, setShuffledPets] = useState([])
   const [start, setStart] = useState(0)
   const [end, setEnd] = useState(2)
+  const [reshuffle, setReshuffle] = useState(false)
 
   // Fisher-Yates algorithm
   function shuffle(arr) {
@@ -30,7 +31,7 @@ function App() {
     fetch("http://localhost:3000/pets")
     .then(res => res.json())
     .then(data => setShuffledPets(shuffle(data)))
-  }, [])
+  }, [reshuffle])
 
   function onPetClick(id, likes) {
     setStart(() => start + 1)
@@ -47,8 +48,23 @@ function App() {
     })
       .then(res => res.json())
       .then(updatedPet => updatedPet)
+
+      if(end > shuffledPets.length) {
+        console.log("shuffled")
+        setReshuffle(() => !reshuffle)
+        setStart(0)
+        setEnd(2)
+      }
+  }
+
+  function onUpdatePets(petObj) {
+    setShuffledPets([...shuffledPets, petObj])
   }
   const displayedPets = shuffledPets.slice(start,end)
+
+  // if(displayedPets[1] === undefined) {
+  //   setShuffledPets(shuffle(shuffledPets))
+  // }
 
   return (
     <div>
@@ -69,7 +85,9 @@ function App() {
           />
         </Route>
         <Route exact path = "/postyourpet">
-          <PostPet />
+          <PostPet
+          handleUpdatePets = {onUpdatePets}
+          />
         </Route>
         <Route exact path = "/submitted">
           <PetSubmitted />

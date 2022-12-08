@@ -4,14 +4,7 @@
   flex-direction: row;
 }
 
-#vs {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 10;
-  height: 100px;
-}
-
 #gameHeader {
+  color: rgb(90, 103, 174);
   font-size: 3rem;
 }

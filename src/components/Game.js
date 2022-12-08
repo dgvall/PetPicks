@@ -1,14 +1,17 @@
 import React from "react"
 import PetCard from "./PetCard"
-import Vs from "./vs.png"
 import "./Game.css"
 
 function Game ({pets, handlePetClick}) {
+  // function checkForTwoPets() {
+  //   if (pets[1] === undefined) {
+  //     console.log("hello")
+  //   } 
+  // }
   return (
     <div>
       <h1 id = "gameHeader">Pick a Pet!</h1>
       <div id = "card-container">
-      {/* <img id = "vs" src = {Vs} /> */}
       {
         pets.map(pet => {
           return  <PetCard

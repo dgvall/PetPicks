@@ -3,7 +3,7 @@ import {useHistory} from "react-router-dom"
 import PetCard from "./PetCard"
 import "./PostPet.css"
 
-function PostPet() {
+function PostPet({handleUpdatePets}) {
   const [name, setName] = useState("")
   const [image, setImage] = useState("")
   const [type, setType] = useState("")
@@ -34,6 +34,8 @@ function PostPet() {
         },
         body: JSON.stringify(formData)
     })
+      .then(res => res.json())
+      .then(data => handleUpdatePets(data))
       history.push(`/submitted`)
     } else {
       console.log("failed, try again")
@@ -47,11 +49,7 @@ function PostPet() {
     <div id = "page-container">
       <div id = "form-container">
         <h1 id = "postHeader">Your Pet Info</h1>
-        <form id = {
-          error
-          ? "form-error"
-          : "form"
-        }
+        <form id = "form"
         onSubmit = {handleSubmit}
         >
           <h1>Name</h1>
@@ -64,6 +62,7 @@ function PostPet() {
           placeholder = "Pet Name"
           type = "text"
           value = {name}
+          maxLength = {15}
           />
           <h1>Image</h1>
           <input
@@ -101,7 +100,15 @@ function PostPet() {
             value = "Bird"
             > Bird
             </option >
-
+            <option>
+            Fish
+          </option>
+          <option>
+            Reptile
+          </option>
+          <option>
+            Rabbit
+          </option>
             <option
             value = "Other"
             > Other
