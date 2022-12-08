@@ -61,6 +61,8 @@ input {
   width: 30em;
   height: 3em;
   cursor: pointer;
+  border: solid rgb(90, 103, 174) 2px;
+  border-radius: 20px;
 }
 
 select {
@@ -70,4 +72,6 @@ select {
   width: 30.6em;
   text-align: center;
   cursor: pointer;
+  border: solid rgb(90, 103, 174) 2px;
+  border-radius: 20px;
 }
