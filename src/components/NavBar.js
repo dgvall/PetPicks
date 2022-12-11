@@ -24,7 +24,6 @@ function NavBar({handleReshuffle}) {
           to = "/leaderboard"
           >LEADERBOARD</NavLink>
           <NavLink
-          onClick = {handleReshuffle}
           id = "postpet"
           className = "text"
           to = "/postyourpet"
