@@ -7,8 +7,6 @@ function PostPet({handleUpdatePets}) {
   const [name, setName] = useState("")
   const [image, setImage] = useState("")
   const [type, setType] = useState("")
-  const [isEnabled, setIsEnabled] = useState(true)
-  const [error, setError] = useState(false)
 
   const history = useHistory()
 
@@ -19,7 +17,6 @@ function PostPet({handleUpdatePets}) {
       && !(document.getElementById("petImage").src === "https://cdni.iconscout.com/illustration/premium/thumb/404-page-not-found-5718896-4777467.png")
       && !(type === "")
     ) {
-      setError(false)
       console.log("passed")
       const formData = {
         name: name,
@@ -39,8 +36,6 @@ function PostPet({handleUpdatePets}) {
       history.push(`/submitted`)
     } else {
       console.log("failed, try again")
-      setIsEnabled(false)
-      setError(true)
       alert("Please fill in all of your pet information!")
     }
   }
@@ -56,7 +51,6 @@ function PostPet({handleUpdatePets}) {
           <input
           onChange = {(e) => {
             setName(e.target.value)
-            setIsEnabled(true)
             e.target.parentNode.id = "form"
           }}
           placeholder = "Pet Name"
@@ -68,7 +62,6 @@ function PostPet({handleUpdatePets}) {
           <input
           onChange = {(e) => {
             setImage(e.target.value)
-            setIsEnabled(true)
             e.target.parentNode.id = "form"
           }}
           placeholder = "Pet Image URL"
@@ -79,7 +72,6 @@ function PostPet({handleUpdatePets}) {
           <select
             onChange = {(e) => {
               setType(e.target.value)
-              setIsEnabled(true)
               e.target.parentNode.id = "form"
             }}
           >
@@ -114,7 +106,7 @@ function PostPet({handleUpdatePets}) {
             > Other
             </option>
           </select>
-          <button id = "formSubmit" disabled = {!isEnabled}>Submit</button>
+          <button id = "formSubmit">Submit</button>
         </form>
       </div>
       <div id = "card-div">

@@ -5,28 +5,28 @@
       "name": "Jared",
       "image": "https://i.natgeofe.com/n/4f5aaece-3300-41a4-b2a8-ed2708a0a27c/domestic-dog_thumb_square.jpg",
       "type": "Dog",
-      "likes": 58
+      "likes": 60
     },
     {
       "id": 2,
       "name": "Max",
       "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/golden-retriever-royalty-free-image-506756303-1560962726.jpg?crop=0.672xw:1.00xh;0.166xw,0&resize=640:*",
       "type": "Dog",
-      "likes": 56
+      "likes": 58
     },
     {
       "id": 3,
       "name": "Kit",
       "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/cute-cat-photos-1593441022.jpg?crop=0.670xw:1.00xh;0.167xw,0&resize=640:*",
       "type": "Cat",
-      "likes": 56
+      "likes": 60
     },
     {
       "id": 4,
       "name": "Benny",
       "image": "http://yourdost-blog-images.s3-ap-southeast-1.amazonaws.com/wp-content/uploads/2016/01/03165939/Dogs.jpg",
       "type": "Dog",
-      "likes": 63
+      "likes": 64
     },
     {
       "id": 5,
@@ -40,7 +40,7 @@
       "name": "Lenny",
       "image": "https://news.cgtn.com/news/77416a4e3145544d326b544d354d444d3355444f31457a6333566d54/img/37d598e5a04344da81c76621ba273915/37d598e5a04344da81c76621ba273915.jpg",
       "type": "Cat",
-      "likes": 57
+      "likes": 58
     },
     {
       "name": "Paul",
@@ -53,28 +53,28 @@
       "name": "Jeff",
       "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/best-pet-birds-parakeet-1572839068.jpg?crop=0.854xw:0.602xh;0.0391xw,0.139xh&resize=480:*",
       "type": "Bird",
-      "likes": 38,
+      "likes": 39,
       "id": 8
     },
     {
       "name": "Tim & Tom",
       "image": "https://lafeber.com/pet-birds/wp-content/uploads/2020/02/conures-px-4484917.jpg",
       "type": "Bird",
-      "likes": 34,
+      "likes": 36,
       "id": 9
     },
     {
       "name": "Thomas",
       "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/portrait-of-cat-sitting-on-sofa-at-home-royalty-free-image-1574708553.jpg?crop=0.668xw:1.00xh;0.167xw,0&resize=640:*",
       "type": "Cat",
-      "likes": 47,
+      "likes": 48,
       "id": 10
     },
     {
       "name": "Gus",
       "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/best-pet-birds-parrotlet-1572839067.jpg",
       "type": "Bird",
-      "likes": 25,
+      "likes": 27,
       "id": 11
     },
     {
@@ -88,36 +88,43 @@
       "name": "Larry",
       "image": "https://www.reptiledirect.com/wp-content/uploads/2020/10/red-eye-crocodile-skink-lizard-climbing.jpg",
       "type": "Reptile",
-      "likes": 21,
+      "likes": 23,
       "id": 13
     },
     {
       "name": "Bonny",
       "image": "https://www.animalhumanesociety.org/sites/default/files/styles/scale_width_960/public/media/image/2019-03/Nibbles.jpg?itok=N4OjWn-p",
       "type": "Rabbit",
-      "likes": 24,
+      "likes": 25,
       "id": 14
     },
     {
       "name": "Robin",
       "image": "https://www.thesprucepets.com/thmb/pGuWW8MhXl-fodH2NPGHSGaG1-I=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/is-a-rabbit-the-right-pet-for-you-1239320-hero-f324bac8dc34470093dd61d117e0d9ec.jpg",
       "type": "Rabbit",
-      "likes": 22,
+      "likes": 24,
       "id": 15
     },
     {
       "name": "Craig",
       "image": "https://images.unsplash.com/photo-1535591273668-578e31182c4f?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjM2NTI5fQ",
       "type": "Fish",
-      "likes": 18,
+      "likes": 19,
       "id": 16
     },
     {
       "name": "Sunshine",
       "image": "https://pethelpful.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:eco%2Cw_1200/MTkyOTUwMzU2NDU4NjEyNDMy/horse-adopters-no-show.jpg",
       "type": "Other",
-      "likes": 25,
+      "likes": 26,
       "id": 17
+    },
+    {
+      "name": "Tilly",
+      "image": "https://www.cdc.gov/healthypets/images/pets/cute-dog-headshot.jpg?_=42445",
+      "type": "Dog",
+      "likes": 0,
+      "id": 18
     }
   ]
 }

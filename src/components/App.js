@@ -34,9 +34,11 @@ function App() {
   }, [reshuffle])
 
   function onPetClick(id, likes) {
+    // Render next pet
     setStart(() => start + 1)
     setEnd(() => end + 1)
 
+    // Update likes on server
     fetch(`http://localhost:3000/pets/${id}`, {
       method: "PATCH",
       headers: {
@@ -49,12 +51,17 @@ function App() {
       .then(res => res.json())
       .then(updatedPet => updatedPet)
 
+      // Shuffle pets when you get to the end of the array
       if(end > shuffledPets.length) {
         console.log("shuffled")
         setReshuffle(() => !reshuffle)
         setStart(0)
         setEnd(2)
       }
+  }
+
+  function onReshuffle() {
+    setReshuffle(() => !reshuffle)
   }
 
   function onUpdatePets(petObj) {
@@ -64,7 +71,9 @@ function App() {
 
   return (
     <div>
-      <NavBar />
+      <NavBar
+      handleReshuffle = {onReshuffle}
+      />
       <Switch>
         <Route exact path = "/play">
           <Game
