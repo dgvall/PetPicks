@@ -77,6 +77,7 @@ function PostPet({handleUpdatePets}) {
           >
             <option
             value = ""
+            defaultValue = ""
             disabled selected
             > Select Pet Type
             </option>

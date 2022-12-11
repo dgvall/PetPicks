@@ -51,10 +51,9 @@ function App() {
       .then(res => res.json())
       .then(updatedPet => updatedPet)
 
-      // Shuffle pets when you get to the end of the array
+      // Shuffle pets if user gets to the end of the array
       if(end > shuffledPets.length) {
-        console.log("shuffled")
-        setReshuffle(() => !reshuffle)
+        onReshuffle()
         setStart(0)
         setEnd(2)
       }

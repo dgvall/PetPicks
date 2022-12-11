@@ -8,7 +8,6 @@ function NavBar({handleReshuffle}) {
     <div className = "navBar">
         <div>
           <NavLink
-          onClick = {handleReshuffle}
           id = "play"
           className = "text"
           exact to = "/play"
