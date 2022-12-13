@@ -9,23 +9,23 @@ The "Leaderboard" page, by default, displays all of the user submitted pets in o
 
 The "Post Your Pet" page allows users to submit images of their own pets to add to the catalogue. There is some simple validation added to the form so that users cannot submit blank information.
 
-# Getting Started with Create React App
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-# Installation
+## Installation
 
 In the project directory, run
 
 ### npm install -g json-server
 
-Installs json server, the backend for this project.
+Installs json server, the back-end for this project.
 
 ### `npm install`
 
 Installs packages necessary for the build to function.
 
-# Activation
+## Activation
 In the project directory, run
 
 ### `json-server --watch db.json`
@@ -33,7 +33,7 @@ In the project directory, run
 To activate the json server.
 
 
-## Available Scripts
+## Available Front-End Scripts
 
 In the project directory, you can run:
 
