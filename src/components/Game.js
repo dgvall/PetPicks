@@ -17,7 +17,7 @@ function Game ({pets, handlePetClick}) {
             id = {pet.id}
             likes = {pet.likes}
             handlePetClick = {handlePetClick}
-            />
+          />
         }) 
       }
     </div>
