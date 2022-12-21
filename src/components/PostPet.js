@@ -45,28 +45,28 @@ function PostPet({handleUpdatePets}) {
       <div id = "form-container">
         <h1 id = "postHeader">Your Pet Info</h1>
         <form id = "form"
-        onSubmit = {handleSubmit}
+          onSubmit = {handleSubmit}
         >
           <h1>Name</h1>
           <input
-          onChange = {(e) => {
-            setName(e.target.value)
-            e.target.parentNode.id = "form"
+            onChange = {(e) => {
+              setName(e.target.value)
+              e.target.parentNode.id = "form"
           }}
-          placeholder = "Pet Name"
-          type = "text"
-          value = {name}
-          maxLength = {15}
+            placeholder = "Pet Name"
+            type = "text"
+            value = {name}
+            maxLength = {15}
           />
           <h1>Image</h1>
           <input
-          onChange = {(e) => {
-            setImage(e.target.value)
-            e.target.parentNode.id = "form"
-          }}
-          placeholder = "Pet Image URL"
-          type = "text"
-          value = {image}
+            onChange = {(e) => {
+              setImage(e.target.value)
+              e.target.parentNode.id = "form"
+            }}
+            placeholder = "Pet Image URL"
+            type = "text"
+            value = {image}
           />
           <h1>Type</h1>
           <select
@@ -76,45 +76,49 @@ function PostPet({handleUpdatePets}) {
             }}
           >
             <option
-            value = ""
-            defaultValue = ""
-            disabled selected
+              value = ""
+              defaultValue = ""
+              disabled selected
             > Select Pet Type
             </option>
             <option
-            value = "Cat"
+              value = "Cat"
             > Cat
             </option>
             <option
-            value = "Dog"
+              value = "Dog"
             > Dog
             </option >
             <option
-            value = "Bird"
+              value = "Bird"
             > Bird
             </option >
-            <option>
-            Fish
-          </option>
-          <option>
-            Reptile
-          </option>
-          <option>
-            Rabbit
-          </option>
             <option
-            value = "Other"
+              value = "Fish"
+            > Fish
+            </option>
+            <option
+              value = "Reptile"
+            > Reptile
+            </option>
+            <option
+              value = "Rabbit"
+            > Rabbit
+            </option>
+            <option
+              value = "Other"
             > Other
             </option>
           </select>
           <button id = "formSubmit">Submit</button>
         </form>
       </div>
+      
       <div id = "card-div">
         <h1>PREVIEW</h1>
         <PetCard
-        image = {image}
-        name = {name}
+          image = {image}
+          name = {name}
         />
       </div>
     </div>
