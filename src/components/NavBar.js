@@ -8,24 +8,26 @@ function NavBar({handleReshuffle}) {
     <div className = "navBar">
         <div>
           <NavLink
-          id = "play"
-          className = "text"
-          exact to = "/play"
+            id = "play"
+            className = "text"
+            exact to = "/play"
           > PLAY</NavLink>
         </div>
-        <h1 onClick = {() => history.push("/")}
-        className = "title">PetPicks</h1>
+        <h1
+          onClick = {() => history.push("/")}
+          className = "title"
+        >PetPicks</h1>
          <div className = "doubleText">
           <NavLink
-          onClick = {handleReshuffle}
-          id = "leaderboard"
-          className = "text"
-          to = "/leaderboard"
+            onClick = {handleReshuffle}
+            id = "leaderboard"
+            className = "text"
+            to = "/leaderboard"
           >LEADERBOARD</NavLink>
           <NavLink
-          id = "postpet"
-          className = "text"
-          to = "/postyourpet"
+            id = "postpet"
+            className = "text"
+            to = "/postyourpet"
           >POST YOUR PET</NavLink>
         </div>
     </div>
