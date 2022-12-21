@@ -29,8 +29,8 @@ function App() {
 
   useEffect(() => {
     fetch("http://localhost:3000/pets")
-    .then(res => res.json())
-    .then(data => setShuffledPets(shuffle(data)))
+      .then(res => res.json())
+      .then(data => setShuffledPets(shuffle(data)))
   }, [reshuffle])
 
   function onPetClick(id, likes) {
@@ -71,23 +71,23 @@ function App() {
   return (
     <div>
       <NavBar
-      handleReshuffle = {onReshuffle}
+        handleReshuffle = {onReshuffle}
       />
       <Switch>
         <Route exact path = "/play">
           <Game
-          pets = {displayedPets}
-          handlePetClick = {onPetClick}
+            pets = {displayedPets}
+            handlePetClick = {onPetClick}
           />
         </Route>
         <Route exact path = "/leaderboard">
           <Leaderboard
-          pets = {shuffledPets}
+            pets = {shuffledPets}
           />
         </Route>
         <Route exact path = "/postyourpet">
           <PostPet
-          handleUpdatePets = {onUpdatePets}
+            handleUpdatePets = {onUpdatePets}
           />
         </Route>
         <Route exact path = "/submitted">
