@@ -37,15 +37,15 @@ function Leaderboard({pets}) {
       <div id = "filter-container">
         <div id = "filters">
           <input
-          value = {filterName}
-          onChange = {(e) => setFilterName(e.target.value)}
-          type = "text"
-          placeholder = "Pet Name Search"
+            value = {filterName}
+            onChange = {(e) => setFilterName(e.target.value)}
+            type = "text"
+            placeholder = "Pet Name Search"
           />
 
           <select
-          placeholder = "Filter By Animal"
-          onChange = {handleType}
+            placeholder = "Filter By Animal"
+            onChange = {handleType}
           >
           <option>
             All
@@ -88,7 +88,7 @@ function Leaderboard({pets}) {
           leaderboardPets.map((pet, index) => {
             return (
               <tr
-              key = {pet.id}
+                key = {pet.id}
               >
                 <td>
                   <p id = "place" >
