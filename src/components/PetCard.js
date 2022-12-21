@@ -5,20 +5,17 @@ function PetCard({name, image, type, handlePetClick, id, likes}) {
   const [updatedLikes, setUpdatedLikes] = useState(likes)
   
   return (
-    <div className = "card"
-    >
+    <div className = "card">
       <img id = "petImage"
        onClick = {(e) => {
-        if(!e.target.className) {
-          e.target.parentNode.className = "card-clicked"
-          e.target.parentNode.children[1].className = "petName-clicked"
-        }
+        e.target.parentNode.className = "card-clicked"
+        e.target.parentNode.children[1].className = "petName-clicked"
+        
         setUpdatedLikes(() => likes + 1)
         if (handlePetClick) {
           handlePetClick(id, updatedLikes)
         }
-      }
-      }
+      }}
       src = {image}
       onError = {(e) => {
         e.target.onerror = null;
